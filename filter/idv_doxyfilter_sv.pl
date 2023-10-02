@@ -965,13 +965,13 @@ foreach (@infile) {
    if (/typedef enum/) {
       if (/\benum\b\s+{/) {}
       else {
-         s/\benum\b(.*?){/enum {/;
+         s/\benum\b(.*?)\{/enum {/;
       }
    }
    else {
       if (/\benum\b\s+{/) {}
       else {
-         s/\benum\b(.*?){/enum {/;
+         s/\benum\b(.*?)\{/enum {/;
       }
    }
 
